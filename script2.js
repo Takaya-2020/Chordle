@@ -1,4 +1,5 @@
-const tone = ['C2','C#2','D2','D#2','E2','F2','F#2','G2','G#2','A2','A#2','B2',
+/*
+const tone2 = ['C2','C#2','D2','D#2','E2','F2','F#2','G2','G#2','A2','A#2','B2',
 'C3','C#3','D3','D#3','E3','F3','F#3','G3','G#3','A3','A#3','B3'];
 
 const NUMBER_OF_GUESSES = 3;
@@ -10,14 +11,16 @@ let nextTone = 0;
 let rightGuessString= [1,3,7,9]
 
 initBoard()
-const test1 = tone[1]
-const test2 = tone[2]
-const test3 = tone[3]
-const test4 = tone[4]
+const test1 = tone2[1]
+const test2 = tone2[2]
+const test3 = tone2[3]
+const test4 = tone2[4]
 insertChord(test1,1)
 insertChord(test2,2)
 insertChord(test3,3)
 insertChord(test4,4)
+*/
+
 
 function initBoard() {
 console.log(typeof window )
@@ -76,7 +79,7 @@ document.addEventListener("keyup", (e) => {
     if (!found || found.length > 1) {
         return
     } else {
-        insertChord(tone[pressedKey],pressedKey)
+        insertChord(tone2[pressedKey],pressedKey)
     }
 })
 
